@@ -1,0 +1,57 @@
+{
+    "name": "processton-io/processton-setup",
+    "description": "Provide settings app for processton-client.",
+    "version": "1.0.0",
+    "keywords": [
+        "processton",
+        "processton-setup"
+    ],
+    "homepage": "https://github.com/processton-io/processton-setup",
+    "license": "GPL-2.0-or-later",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Ahmad Kokab",
+            "email": "ahmadkokab@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "inertiajs/inertia-laravel": "^0.6.9",
+        "processton-io/processton-client": "^1.0",
+        "processton-io/processton-object": "^1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Processton\\ProcesstonSetup\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Processton\\ProcesstonSetup\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Processton\\ProcesstonSetup\\ProcesstonSetupServiceProvider"
+            ],
+            "aliases": {
+                "ProcesstonSetup": "Processton\\ProcesstonSetup\\ProcesstonSetupFacade"
+            }
+        }
+    }
+}
