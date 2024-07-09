@@ -20,7 +20,10 @@
         "php": "^7.4|^8.0",
         "inertiajs/inertia-laravel": "^0.6.9",
         "processton-io/processton-client": "^1.0",
-        "processton-io/processton-object": "^1.0"
+        "processton-io/processton-object": "^1.0",
+        "processton-io/processton-user": "^1.0",
+        "processton-io/processton-org": "^1.0",
+        "processton-io/processton-currency": "^1.0"
     },
     "require-dev": {
         "orchestra/testbench": "^6.0",
