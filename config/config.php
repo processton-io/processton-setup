@@ -9,6 +9,21 @@ return [
             'name' => 'Setup',
             'slug' => 'setup',
             'icon' => 'codepen',
+            'theme' => [
+                'type' => 'light',
+                'nav_bar' => 'admin_top', //admin_top, admin_side, top, side, hidden, minified_top, minified_side
+                //admin_side, side, minified_side
+                'breadcrumb' => true, //top, hidden
+                'centered_layout' => false,
+            ],
+            'top_nav' => [
+                'global' => [
+                    'user_dropdown' => []
+                ],
+                'local' => [
+                    'user_dropdown' => []
+                ]
+            ],
             'logo' => 'codepen.png',
             "department" => "IT, Infrastructure",
             'group' => ['admin', 'serice_engineer'],
