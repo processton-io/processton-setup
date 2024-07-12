@@ -1,7 +1,7 @@
 {
     "name": "processton-io/processton-setup",
     "description": "Provide settings app for processton-client.",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "keywords": [
         "processton",
         "processton-setup"
